@@ -1,0 +1,34 @@
+/* Add your global styles here */
+
+.upperPortion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  
+  .leftContent {
+    /* Style your left content (e.g., image) */
+    width: 500px;
+    height: 500px;
+    max-width: 50%; /* Adjust as needed */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  .rightContent {
+    /* Style your right content (e.g., description) */
+    height: 500px;
+    max-width: 50%; /* Adjust as needed */
+    overflow-y: scroll; /* Allow vertical scrolling when content overflows */
+  }
+  
+  /* Hide vertical scrollbar for the upperPortion */
+  .upperPortion::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .lowerPortion {
+    margin-top: 100px;
+  }
+  
+  /* Add any additional styling as needed */
+  

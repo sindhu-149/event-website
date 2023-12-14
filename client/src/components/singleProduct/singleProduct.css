@@ -1,0 +1,672 @@
+.navigation{
+    width: 270px;
+    height: 18px;
+    margin: 30px 0px 30px 66px;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+
+
+}
+
+.singleProduct-box{
+    display: flex;
+    flex-direction: column;
+    /* border: 6px solid red; */
+}
+.aboutProduct{
+    display: flex;
+    flex-direction: row;
+    /* border: 6px solid rgb(21, 0, 255); */
+    justify-content: space-between;
+}
+.singleProduct{
+    width: 530px;
+    height: 680px;
+    margin-left: 66px;
+    border-radius: 5px;
+    background: #FDFFFD;
+    /* border: 6px solid rgb(255, 0, 136); */
+    box-shadow: 0px 1px 2px 0px #00000040;
+    box-shadow: 0px 2px 6px 2px #00000026;
+    /* flex: 40%; */
+    position: sticky;
+    top: 0;
+}
+
+.productImageBox{
+    width: 496px;
+    height: 590px;
+    /* border: 2px solid black; */
+    margin: 15px 15px 0px 15px;
+}
+
+.pro-image{
+width: 496px;
+height: 500px;
+background: #D9D9D9;
+margin:auto 0;
+}
+
+.addOn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.adds{
+    width: 91px;
+    height: 75px;
+    background: #D9D9D9;
+}
+
+.item-price{
+    width: 94px;
+    height: 32px;
+    font-family: Lato;
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px !important;
+
+}
+
+.description{
+    flex: 40%;
+    margin-right: 66px;
+    margin-left: 150px;
+    /* border: 10px solid black; */
+}
+
+.des-type{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    /* border: 1px solid green; */
+    justify-content: space-between;
+}
+
+.des-content-types{
+  
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667B68;
+
+}
+
+.nameOfProduct{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin: 10px 0px !important;
+    
+
+}
+
+
+.productRating{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black;  */
+    width: 20%;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.rate{
+    width: 36px;
+    border-radius: 2px;
+    background: #A3B899;
+    text-align: center;
+
+}
+
+.selectLoaction{
+    width: 666px;
+    height: 322px;
+    background: #FDFFFD;
+    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #00000040; 
+    padding: 30px;
+    margin-top: 50px;
+     
+}
+
+.enterLocation{
+    width: 309px;
+    height: 48px;
+    border-radius: 5px;
+    color: #A3B899;
+    border: 1px solid #A3B899;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.locationBox{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0px 10px;
+    padding: 5px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.mapLogo{
+    width: 19px;
+    height: 24px;
+    /* margin:auto 0px; */
+}
+
+.locationDes{
+    width: 170px;
+    height: 20px;
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8184;
+    border: none;
+    outline: none;
+    margin-left: 8px;
+
+}
+
+.pin{
+    width: 190px;
+    height: 17px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-top: 10px !important;
+
+}
+
+/* .dateAndTime{
+    width: 531px;
+    height: 48px;
+    color: #A3B899;
+    border-radius: 5px;
+    border: 1px solid #A3B899;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+
+} */
+
+.calenderLogo{
+    width: 24px;
+    height: 24px;
+
+}
+
+.deliveryCharges{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.deliveryText{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7B8184;
+    /* margin-right: 5px; */
+
+}
+
+.buttonBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.bookButton{
+    width: 420px;
+    height:36px;
+    padding: 7px, 25px, 7px, 25px;
+    border-radius: 5px;
+    gap: 10px;
+    background: #667B68;
+    border: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FDFFFD;
+
+
+}
+
+.cartButton{
+    width:178px;
+    height:36px;
+    padding: 7px, 25px, 7px, 25px;
+    border-radius: 5px;
+    border: 1px;
+    gap: 10px;
+    color: #667B68;
+    border: 1px solid #667B68;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+
+}
+
+.overview{
+    margin-top: 45px;
+    /* border: 1px solid red; */
+}
+
+.overview h3{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-bottom: 0px;
+}
+
+.overview p{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-top: 10px;
+
+}
+
+.line{
+    border: 1px solid #DEDFE0;
+    margin: 36px 0px;
+}
+
+.inclusions h3{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    /* margin-bottom: 0px; */
+}
+
+.inclusionText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.inclusionText img{
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+}
+
+.inclusionText p{
+    margin: 5px;
+}
+
+.experience{
+    margin-top: 0px !important;
+}
+
+
+.customize{
+    height: 242px;
+    background: #FDFFFD;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    box-shadow: 0px 1px 3px 1px #00000026;
+    padding: 0px 20px;
+}
+
+.customize h3{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    padding-top: 10px;
+    
+}
+
+.customize-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c-box{
+    width: 297px;
+    height: 120px;
+    border-radius: 5px;
+    background: #FDFFFD;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    box-shadow: 0px 2px 6px 2px #00000026;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+
+
+}
+
+.c-img{
+    width: 106px;
+    height: 110px;
+    border-radius: 2px;
+    background: #D9D9D9;
+
+}
+
+.customeDes{
+    /* border: 1px solid red; */
+    flex: 70%;
+    margin-left: 10px;
+    height: 110px;
+}
+
+.customeDes  h4{
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin: 0px;
+}
+
+.customeDes  p{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-top: 5px;
+
+}
+
+.cust{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid pink; */
+    margin-top: 25px;
+}
+
+.cust-btn button{
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background: #FDFFFD;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    box-shadow: 0px 2px 6px 2px #00000026;
+    border: none;
+    outline: none;
+    color: #667B68;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+
+}
+
+.cust-btn{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    padding-right: 15px;
+}
+.c-btn p{
+    font-size: 20px;
+}
+
+.seeAll{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667B68;
+    margin-top: 25px;
+    margin-bottom: 0px;
+
+}
+
+.sLine{
+    width: 58px;
+    float: left;
+    border: 1px solid  #667B68;
+    margin: 0px !important;
+}
+
+
+.reviews{
+    /* height: 687.5px */
+}
+
+.review-heading h3{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-bottom: 10px;
+
+}
+
+.review-heading h2{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #516553;
+    display: inline;
+  
+
+}
+
+.review-heading div{
+    display: inline;
+    margin-left: 8px;
+  
+}
+
+.review-heading h6{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A3B899;
+    margin-top: 3px;
+   
+
+}
+.review-profies{
+    width: 80px;
+    height: 80px;
+    background: #D9D9D9;
+}
+
+.review-seeAll{
+    /* border: 1px solid pink; */
+    align-items: center;
+}
+
+.single-review{
+    height: 216px;
+    margin-top:30px
+}
+
+.profile-pic{
+    width: 32px;
+    height: 32px;
+    background: #D9D9D9;
+    border-radius: 100%;
+   
+
+
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.person{
+    margin-left: 10px;
+    /* border: 1px solid red; */
+}
+
+.person h6,p{
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+.person h6{
+
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+   color: #2F4031;
+
+}
+
+.person p{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #516553;
+
+}
+
+
+.review-content{
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2F4031;
+    margin-top: 10px;
+    margin-left: 42px;
+
+}
+
+.review-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+    width: 60%;
+    margin-left: 42px;
+}
+
+
+.similarProducts{
+    height: 612px;
+    margin: 40px 66px 140px 66px;
+    border: 0px solid red;
+}
+
+.similarProducts h3{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #516553;
+   
+
+}
+
+.flexContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+.flexItem {
+    width: calc(25% - 10px); /* Set width to 25%, considering margin between items */
+    margin-bottom: 10px; /* Add margin between rows */
+}

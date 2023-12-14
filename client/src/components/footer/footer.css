@@ -1,0 +1,86 @@
+.footer {
+    height: 397px;
+    background: #DDE6D5;
+    position: relative;
+}
+
+
+.copyright {
+    height: 59px;
+    background: #A3B899;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.copy-text {
+    width: 90%;
+    height: 45px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    font-size: 14.5px;
+    display: flex;
+    align-items: center; 
+}
+
+
+.footer-box{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+
+}
+.foo-logo{
+    width: 198px;
+    height: 100px;
+    margin-top: 114px;
+    margin-left: 127px;
+    background: #FDFFFD;
+
+}
+.footer-des{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 66px;
+}
+.terms{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.terms-text{
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #667B68;
+
+}
+
+.contact{
+   
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.social-media{
+    margin:auto 0;
+    margin-left:200px;
+}
+.social-logo{
+    margin: 50px 30px;
+    
+
+
+}
+
+.payment{
+    margin: 50px 0px;
+}
