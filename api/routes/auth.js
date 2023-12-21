@@ -1,6 +1,8 @@
 const router =require("express").Router()
 const User = require('../models/User')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken');
+
 
 router.post('/register', async(req, res) =>{
     try {
@@ -23,26 +25,55 @@ router.post('/register', async(req, res) =>{
 router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({ username: req.body.username });
-        
+
         if (!user) {
             res.status(400).json('Invalid username');
-            return; 
+            return;
         }
-        
+
         const validated = await bcrypt.compare(req.body.password, user.password);
-        
+
         if (!validated) {
             res.status(400).json('Incorrect Password');
-            return; 
+            return;
         }
-        
+
+        // Generate and send JWT token
+        const token = jwt.sign({ userId: user._id }, 'your-secret-key', { expiresIn: '1h' });
+
         const { password, ...others } = user._doc;
-        res.status(200).json(others);
-        
+        res.status(200).json({ user: others, token });
+
     } catch (err) {
         res.status(500).json(err);
     }
 });
+
+
+
+// router.post('/login', async (req, res) => {
+//     try {
+//         const user = await User.findOne({ username: req.body.username });
+        
+//         if (!user) {
+//             res.status(400).json('Invalid username');
+//             return; 
+//         }
+        
+//         const validated = await bcrypt.compare(req.body.password, user.password);
+        
+//         if (!validated) {
+//             res.status(400).json('Incorrect Password');
+//             return; 
+//         }
+        
+//         const { password, ...others } = user._doc;
+//         res.status(200).json(others);
+        
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// });
 
 
 module.exports = router
