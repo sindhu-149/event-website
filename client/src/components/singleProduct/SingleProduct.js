@@ -9,6 +9,7 @@ import Calendar from '../calendar/Calendar'
 import Location from '../location/Location'
 import { useParams } from 'react-router-dom';
 import info from '../../data/all.json';
+// import p from '../../data/photos/kid.png'
 
 
 
@@ -31,9 +32,9 @@ const SingleProduct = () => {
     
 
   return (
-    <div>
+    <div className='sindhu'>
         
-        <div className='navigation'>Home</div>
+        <div className='productNavigation'>Home</div>
         <div className='singleProduct-box'>
             <div className='aboutProduct'>
                 <div className='singleProduct'>
@@ -246,6 +247,7 @@ const SingleProduct = () => {
                 {similar.map(p=>(
                     <div className='product' key={p.id}>
                         <img className='product-img' src={p.image}></img>
+                        {/* <img className='product-img' src="../../data/photos/kid.png"></img> */}
                         <p className='product-name'>{p.title}{p.id}</p>
                         <div className='product-des'>
                         <p className='price'>₹{p.price}</p>

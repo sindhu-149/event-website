@@ -7,17 +7,17 @@ import Products from '../products/Products'
 import Slider from '../slider/Slider'
 import SingleProduct from '../singleProduct/SingleProduct'
 import Demo from '../demo/Demo'
+import Navbar from '../navbar/Navbar'
 
 
 const HomePage = () => {
   return (
     <div className='home'>
+    <Navbar />
     <Header />
-    {/* <SingleProduct /> */}
     <Slider />
     <Occasion />
     <Products />
-    {/* <Demo /> */}
     <Footer />
     </div>
   )

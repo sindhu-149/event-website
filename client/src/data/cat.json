@@ -1,0 +1,49 @@
+[
+    {
+      "cat": "Birthday Decor",
+      "data": {
+        "decor": ["All Birthday Decors","Birthday Decor For Him","Birthday Decor For Her","Birthday Decor For Kids","Themed Decor","Themed Decor For Kids","Terrace Decor","Car Boot Decor","Birthday Party Decor"],
+        "experience": ["Candle Night Dinner","Private Dinner","Poolside Decor and Dinner","Cabana Setup","Outdoor Dinners","Special Lunch Setup"]
+      },
+      "image":""
+    },
+    {
+      "cat": "Anniversary",
+      "data": {
+        "decor": ["All Anniversary Decors","1st Anniversary Decors","25th Anniversary Decors","50th Anniversary Decors","75th Anniversary Decors","Anniversary Party Decor"],
+        "experience": ["Candle Night Dinner","Private Dinner","Poolside Decor and Dinner","Cabana Setup","Outdoor Dinners","Special Lunch Setup"]
+      },
+      "image":""
+    },
+    {
+      "cat": "Festive Decor",
+      "data": {
+        "items": ["Republic Day Decor","Pongal Decor","Holi Decor","Lohri Decor","Raksha Bandhan Decor","Janmashtmi","Independence Day","Onam","Ganesh Chaturthi","Navratri","Durga Puja","Dussehra","Halloween Decor","Karva Chauth","Diwali","Christmas decor","New Year Decor"]
+      },
+      "image":""
+    },
+    {
+      "cat": "Ceremonies",
+      "data": {
+        "items": ["Baby Shower","Naming Ceremony","Pooja Decors","Housewarming","Pre-Wedding Festivities","Bachelor","Bachelorette","Wedding Night Decor","Valentine's Decor","Surprise Proposal"]
+      }
+    },
+    {
+      "cat": "Cakes",
+      "data": {
+        "by_feature": ["All Cakes","Best Sellers","Same Day Delivery","New Arrivals","Midnight Delivery", "Flowers and Cakes Combo","Cake Combos","Cake and Chocolates Combo"],
+        "by_occasion": ["All Cakes","Birthday Cakes","Kid's Birthday Cakes","Anniversary Cakes","1st Anniversary","25th Anniversary","50th Anniversary","75th Anniversary","Wedding Cakes","Congratulations Cakes"],
+        "by_type": ["All Cakes","Eggless Cakes","Photo Cakes","Cheesecakes","Designer Cakes","Fondant Cakes","Multi-tiered Cakes","Cupcakes","Dry Cakes","Jar Cakes"]
+      },
+      "image":""
+    },
+    {
+      "cat": "Flowers",
+      "data": {
+        "by_feature": ["All Bouquets","Birthday","Anniversary","Wedding","Congratulations","Sympathy N Funeral"],
+        "by_occasion": ["All Bouquets","Roses","Carnations","Orchids","Daises","Gerberas","Tulips","Lilies","Mixed Flowers","Exotic Flowers"],
+        "by_type": ["All Bouquets","Best Sellers","Personalised Bouquets","Zodiac Flowers","Same Day Delivery","Premium Flowers","New Arrivals","Flowers and Cakes Combo","Flowers and Chocolates Combo"]
+      },
+      "image":""
+    }
+  ]

@@ -1,211 +1,211 @@
 [{
     "id": 1,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "Ganesh decoration",
     "price": "2400",
     "rating": 4.9,
-    "category": "festive decoration"
+    "category": "Festive Decor"
   }, {
     "id": 2,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "birthday",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "Birthday Decor",
     "price": "1400",
     "rating": 4.5,
-    "category": "birthday"
+    "category": "Birthday Decor"
   }, {
     "id": 3,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "party decoration",
     "price": "2400",
     "rating": 3.5,
-    "category": "decoration"
+    "category": "Flowers"
   }, {
     "id": 4,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "photo frame",
     "price": "1100",
     "rating": 4.2,
-    "category": "gift"
+    "category": "Cakes"
   }, {
     "id": 5,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "durga matha decoration",
     "price": "2800",
     "rating": 4.8,
-    "category": "festive decoration"
+    "category": "Festive Decor"
   }, {
     "id": 6,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "freshers decoration",
     "price": "5000",
     "rating": 4.6,
-    "category": "decoration"
+    "category": "Flowers"
   }, {
     "id": 7,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "one year birthday",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "one year Birthday Decor",
     "price": "2000",
     "rating": 4.6,
-    "category": "kid birthday"
+    "category": "Ceremonies"
   }, {
     "id": 8,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "braclets",
     "price": "1000",
     "rating": 4.7,
-    "category": "gift"
+    "category": "Cakes"
   }, {
     "id": 9,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "kid birthday",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "Ceremonies",
     "price": "2400",
     "rating": 4.4,
-    "category": "kid birthday"
+    "category": "Ceremonies"
   }, {
     "id": 10,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "freshers decoration",
     "price": "4000",
     "rating": 4.2,
-    "category": "decoration"
+    "category": "Flowers"
   }, {
     "id": 11,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "durga matha decoration",
     "price": "3200",
     "rating": 4.6,
-    "category": "festive decoration"
+    "category": "Festive Decor"
   }, {
     "id": 12,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "shiva pooja decoration",
     "price": "2300",
     "rating": 4.8,
-    "category": "festive decoration"
+    "category": "Festive Decor"
   }, {
     "id": 13,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "printed cups",
     "price": "1200",
     "rating": 5,
-    "category": "gift"
+    "category": "Cakes"
   }, {
     "id": 14,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "bithday decoration",
     "price": "2800",
     "rating": 4,
-    "category": "birthday"
+    "category": "Birthday Decor"
   }, {
     "id": 15,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "retire party decoration",
     "price": "2800",
     "rating": 3,
-    "category": "decoration"
+    "category": "Flowers"
   }, {
     "id": 16,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "ganesh decoration",
     "price": "2800",
     "rating": 5,
-    "category": "festive decoration"
+    "category": "Festive Decor"
   }, {
     "id": 17,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "couple rings",
     "price": "1800",
     "rating": 3,
-    "category": "gift"
+    "category": "Cakes"
   }, {
     "id": 18,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "aniverary decoration",
     "price": "2800",
     "rating": 3,
-    "category": "aniversary"
+    "category": "Anniversary"
   }, {
     "id": 19,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "bithday decoration with lights",
     "price": "2800",
     "rating": 3,
-    "category": "birthday"
+    "category": "Birthday Decor"
   }, {
     "id": 20,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "balloon decoration",
     "price": "2800",
     "rating": 5,
-    "category": "kid birthday"
+    "category": "Ceremonies"
   }, {
     "id": 21,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "chains",
     "price": "2800",
     "rating": 4,
-    "category": "gift"
+    "category": "Cakes"
   }, {
     "id": 22,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "durga matha decoration",
     "price": "2800",
     "rating": 5,
-    "category": "decoration"
+    "category": "Flowers"
   }, {
     "id": 23,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "25th aniversary",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "25th Anniversary",
     "price": "2800",
     "rating": 3,
-    "category": "aniversary"
+    "category": "Anniversary"
   }, {
     "id": 24,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "kids birthday",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "kids Birthday Decor",
     "price": "2200",
     "rating": 3,
-    "category": "kid birthday"
+    "category": "Ceremonies"
   }, {
     "id": 25,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "photo frames",
     "price": "2800",
     "rating": 3,
-    "category": "gift"
+    "category": "Cakes"
   }, {
     "id": 26,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "21st birthday",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "21st Birthday Decor",
     "price": "2800",
     "rating": 4,
-    "category": "birthday"
+    "category": "Birthday Decor"
   }, {
     "id": 27,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "shiva pooja decoration",
     "price": "2800",
     "rating": 3,
-    "category": "festive decoration"
+    "category": "Festive Decor"
   }, {
     "id": 28,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
-    "title": "first aniversary",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
+    "title": "first Anniversary",
     "price": "2800",
     "rating": 3,
-    "category": "aniversary"
+    "category": "Anniversary"
   }, {
     "id": 29,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "freshers party",
     "price": "2800",
     "rating": 5,
-    "category": "decoration"
+    "category": "Flowers"
   }, {
     "id": 30,
-    "image":"https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg",
+    "image":"https://i.pinimg.com/originals/ee/f0/36/eef036f583e91a438896a377716ea85e.jpg",
     "title": "candle light dinner",
     "price": "2800",
     "rating": 5,
-    "category": "aniversary"
+    "category": "Anniversary"
   }]

@@ -1,7 +1,14 @@
-.navigation{
+.sindhu{
+    /* background-color: pink; */
+    /* margin-top: -30px !important; */
+}
+
+.productNavigation{
     width: 270px;
-    height: 18px;
-    margin: 30px 0px 30px 66px;
+    /* height: 18px; */
+    /* margin: 30px 0px 30px 66px; */
+    margin-left: 66px;
+    padding: 30px 0px;
     font-family: Lato;
     font-size: 15px;
     font-weight: 400;
@@ -15,6 +22,8 @@
     letter-spacing: 0em;
     text-align: left;
     color: #2F4031;
+    
+    
 
 
 }
@@ -29,6 +38,8 @@
     flex-direction: row;
     /* border: 6px solid rgb(21, 0, 255); */
     justify-content: space-between;
+    /* background-color: green; */
+    
 }
 .singleProduct{
     width: 530px;
@@ -41,7 +52,9 @@
     box-shadow: 0px 2px 6px 2px #00000026;
     /* flex: 40%; */
     position: sticky;
-    top: 0;
+    top: 150px;
+    /* margin-top: 70px; */
+   
 }
 
 .productImageBox{
@@ -91,6 +104,7 @@ margin:auto 0;
     flex: 40%;
     margin-right: 66px;
     margin-left: 150px;
+    /* background-color: pink; */
     /* border: 10px solid black; */
 }
 
@@ -641,7 +655,7 @@ margin:auto 0;
 
 
 .similarProducts{
-    height: 612px;
+    /* height: 612px; */
     margin: 40px 66px 140px 66px;
     border: 0px solid red;
 }
@@ -662,11 +676,5 @@ margin:auto 0;
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
-    /* background-color: #2196F3; */
     padding: 10px;
-}
-
-.flexItem {
-    width: calc(25% - 10px); /* Set width to 25%, considering margin between items */
-    margin-bottom: 10px; /* Add margin between rows */
 }
