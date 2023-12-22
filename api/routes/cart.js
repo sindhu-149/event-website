@@ -1,267 +1,96 @@
-// const router = require("express").Router();
-// const Cart = require('../models/Cart');
-// const ProductsData = require('../models/ProductsData');
-// const authMiddleware = require('../authMiddleware'); 
-
-// // CREATE CART
-// router.post('/', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-
-//     try {
-//         const existingCart = await Cart.findOne({ username });
-//         if (existingCart) {
-//             return res.status(400).json("Cart already exists for this user");
-//         }
-
-//         const newCart = new Cart({ username, items: [] });
-//         const savedCart = await newCart.save();
-
-//         res.status(201).json(savedCart);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// // ADD ITEM TO CART
-// router.post('/add/:productId', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-//     const productId = req.params.productId;
-
-//     try {
-//         const cart = await Cart.findOne({ username });
-//         if (!cart) {
-//             return res.status(404).json("Cart not found for this user");
-//         }
-
-//         const product = await ProductsData.findById(productId);
-//         if (!product) {
-//             return res.status(404).json("Product not found");
-//         }
-
-//         cart.items.push({
-//             productId,
-//             quantity: 1, // You can modify this based on your requirements
-//         });
-
-//         await cart.save();
-
-//         res.status(200).json(cart);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// // DELETE ITEM FROM CART
-// router.delete('/remove/:productId', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-//     const productId = req.params.productId;
-
-//     try {
-//         const cart = await Cart.findOne({ username });
-//         if (!cart) {
-//             return res.status(404).json("Cart not found for this user");
-//         }
-
-//         cart.items = cart.items.filter(item => item.productId !== productId);
-
-//         await cart.save();
-
-//         res.status(200).json(cart);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// // GET ALL ITEMS IN CART
-// router.get('/', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-
-//     try {
-//         const cart = await Cart.findOne({ username });
-//         if (!cart) {
-//             return res.status(404).json("Cart not found for this user");
-//         }
-
-//         res.status(200).json(cart.items);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// module.exports = router;
-
-
-// const router = require("express").Router();
-// const Cart = require('../models/Cart');
-// const ProductsData = require('../models/ProductsData');
-// const User = require('../models/User');
-// const authMiddleware = require('../authMiddleware');
-
-// // CREATE CART
-// router.post('/', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-
-//     try {
-//         const existingCart = await Cart.findOne({ username });
-//         if (existingCart) {
-//             return res.status(400).json("Cart already exists for this user");
-//         }
-
-//         const newCart = new Cart({ username, items: [] });
-//         const savedCart = await newCart.save();
-
-//         // Update the user's cart array
-//         const user = await User.findOneAndUpdate(
-//             { username },
-//             { $push: { cart: savedCart._id } },
-//             { new: true }
-//         );
-
-//         res.status(201).json(savedCart);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// // ADD ITEM TO CART
-// router.post('/add/:productId', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-//     const productId = req.params.productId;
-
-//     try {
-//         const cart = await Cart.findOne({ username });
-//         if (!cart) {
-//             return res.status(404).json("Cart not found for this user");
-//         }
-
-//         const product = await ProductsData.findById(productId);
-//         if (!product) {
-//             return res.status(404).json("Product not found");
-//         }
-
-//         cart.items.push({
-//             productId,
-//             quantity: 1,
-//         });
-
-//         await cart.save();
-
-//         // Update the user's cart array
-//         const user = await User.findOneAndUpdate(
-//             { username },
-//             { $push: { cart: cart._id } },
-//             { new: true }
-//         );
-
-//         res.status(200).json(cart);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// // DELETE ITEM FROM CART
-// router.delete('/remove/:productId', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-//     const productId = req.params.productId;
-
-//     try {
-//         const cart = await Cart.findOne({ username });
-//         if (!cart) {
-//             return res.status(404).json("Cart not found for this user");
-//         }
-
-//         cart.items = cart.items.filter(item => item.productId !== productId);
-
-//         await cart.save();
-
-//         // Update the user's cart array
-//         const user = await User.findOneAndUpdate(
-//             { username },
-//             { $push: { cart: cart._id } },
-//             { new: true }
-//         );
- 
-//         res.status(200).json(cart);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// // GET ALL ITEMS IN CART
-// router.get('/', authMiddleware, async (req, res) => {
-//     const { username } = req.body;
-
-//     try {
-//         const user = await User.findOne({ username }).populate('cart');
-//         if (!user) {
-//             return res.status(404).json("User not found");
-//         }
-
-//         res.status(200).json(user.cart.items);
-//     } catch (error) {
-//         res.status(500).json(error);
-//     }
-// });
-
-// module.exports = router;
-
-
-
-
-// cartRoutes.js
-
 const router = require('express').Router();
 const User = require('../models/User');
 const ProductsData = require('../models/ProductsData');
 const authMiddleware = require('../authMiddleware');
 
-// Add product to user's cart
-router.post('/add-to-cart/:productId', authMiddleware, async (req, res) => {
+// Update or add product to user's cart
+router.post('/add-to-cart', authMiddleware, async (req, res) => {
     try {
-        const user = req.user;
-        const product = await ProductsData.findById(req.params.productId);
+        const userId = req.user.userId;
 
-        if (!product) {
-            return res.status(404).json({ message: 'Product not found' });
+        const user = await User.findById(userId);
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
         }
 
-        const { addons, quantity } = req.body;
-        const cartItem = {
-            product: req.params.productId,
-            addons: addons || [],
-            quantity: quantity || 1,
-        };
+        const { productId, addons, quantity } = req.body;
 
-        user.cart.push(cartItem);
+        // Check if the product already exists in the cart
+        const existingItemIndex = user.cart.findIndex((item) => item.product.toString() === productId);
+
+        if (existingItemIndex !== -1) {
+            // If the product already exists, update the quantity
+            user.cart[existingItemIndex].quantity += quantity;
+        } else {
+            // If the product is not in the cart, add a new item
+            user.cart.push({
+                product: productId,
+                addons,
+                quantity,
+            });
+        }
+
         await user.save();
 
-        res.status(200).json({ message: 'Product added to cart successfully', cart: user.cart });
+        res.status(200).json({ message: 'Product added to the cart successfully' });
     } catch (error) {
+        console.error(error);
         res.status(500).json({ message: 'Internal server error', error });
     }
 });
 
-// Remove product from user's cart
-router.post('/remove-from-cart/:productId', authMiddleware, async (req, res) => {
+router.delete('/remove-from-cart/:productId/', authMiddleware, async (req, res) => {
     try {
-        const user = req.user;
         const productId = req.params.productId;
+        const userId = req.user.userId;
 
-        // Find index of the cart item with the specified product ID
-        const index = user.cart.findIndex((item) => item.product.toString() === productId);
+        // Find the user
+        const user = await User.findById(userId);
 
-        if (index === -1) {
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        const cartIndex = user.cart.findIndex(item => item.product.toString() === productId);
+
+        if (cartIndex === -1) {
             return res.status(404).json({ message: 'Product not found in cart' });
         }
 
-        // Remove the item from the cart array
-        user.cart.splice(index, 1);
+        user.cart.splice(cartIndex, 1);
+
         await user.save();
 
         res.status(200).json({ message: 'Product removed from cart successfully', cart: user.cart });
     } catch (error) {
+        console.error('Error removing product from cart:', error);
         res.status(500).json({ message: 'Internal server error', error });
     }
 });
+
+
+
+
+
+router.get('/', authMiddleware, async (req, res) => {
+    try {
+        const user = await User.findById(req.user.userId).populate({
+            path: 'cart.product',
+            model: 'ProductsData',  // Replace with the actual model name for ProductsData
+        });
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.status(200).json(user.cart);
+    } catch (error) {
+        res.status(500).json({ message: 'Internal server error', error });
+    }
+});
+
+
+
 
 module.exports = router;

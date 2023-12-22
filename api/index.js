@@ -8,6 +8,7 @@ const productDataRoute = require('./routes/productsData')
 const categoryRoute = require('./routes/categories')
 const commentsRoute = require('./routes/comments')
 const cartRoute = require('./routes/cart')
+// const addOnsRoute = require('./routes/addons')
 const multer = require('multer')
 
 app.use(express.json())
@@ -51,6 +52,7 @@ app.use('/api/data',productDataRoute)
 app.use('/api/categories',categoryRoute)
 app.use('/api/comment',commentsRoute)
 app.use('/api/cart',cartRoute)
+// app.use('/api/addons',addOnsRoute)
 
 
 dotenv.config()

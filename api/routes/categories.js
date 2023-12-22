@@ -56,7 +56,7 @@ router.put('/:id', authMiddleware, async (req, res) => {
         const updatedCategory = await Category.findByIdAndUpdate(
             req.params.id,
             { $set: req.body },
-            { new: true }
+            { new: true } 
         );
 
         if (!updatedCategory) {

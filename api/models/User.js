@@ -68,10 +68,12 @@ const UserSchema = new mongoose.Schema(
                 product: {
                     type: mongoose.Schema.Types.ObjectId,
                     ref: 'ProductsData',
+                    required: true,
                 },
                 addons: [
                     {
-                        type: mongoose.Schema.Types.ObjectId,
+                        // type: mongoose.Schema.Types.ObjectId,
+                        type: String,
                         ref: 'Categories',
                     },
                 ],
