@@ -1,31 +1,88 @@
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose');
+
+// const UserSchema = new mongoose.Schema(
+//     {
+//         username: {
+//             type: String,
+//             require: true,
+//             unique: true,
+//         },
+//         email: {
+//             type: String,
+//             require: true,
+//             unique: true,
+//         },
+//         password: {
+//             type: String,
+//             require: true,
+//         },
+//         profilePic: {
+//             type: String,
+//             default: "",
+//         },
+//         role: {
+//             type: String,
+//             default: "user",
+//         },
+//         cart:{
+//             type:Array,
+//             require:false
+//         }
+//     },
+//     { timestamps: true }
+// );
+
+// module.exports = mongoose.model('User', UserSchema);
+
+
+// User.js
+
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema(
     {
-        username :{
-            type: String,
-            require: true,
-            unique: true
-        },
-        email:{
+        username: {
             type: String,
             require: true,
             unique: true,
         },
-        password:{
+        email: {
+            type: String,
+            require: true,
+            unique: true,
+        },
+        password: {
             type: String,
             require: true,
         },
-        profilePic:{
+        profilePic: {
             type: String,
             default: "",
         },
-        cart:{
-            type:Array,
-            require:false
-        }
+        role: {
+            type: String,
+            default: "user",
+        },
+        cart: [
+            {
+                product: {
+                    type: mongoose.Schema.Types.ObjectId,
+                    ref: 'ProductsData',
+                },
+                addons: [
+                    {
+                        type: mongoose.Schema.Types.ObjectId,
+                        ref: 'Categories',
+                    },
+                ],
+                quantity: {
+                    type: Number,
+                    default: 1,
+                },
+            },
+        ],
     },
-    {timestamps: true}
-)
+    { timestamps: true }
+);
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema);

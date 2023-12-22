@@ -1,21 +1,36 @@
 const router =require("express").Router()
 const User = require('../models/User')
 const ProductsData = require('../models/ProductsData')
+const authMiddleware = require('../authMiddleware');
 
 // CREATE POST
-router.post('/', async(req, res) =>{
-    const newProduct = new ProductsData(req.body)
-    try {
-        const savedProduct = await newProduct.save()
-        res.status(200).json(savedProduct)
-    } catch (error) {
-        res.status(500).json(err) 
+
+router.post('/', authMiddleware, async (req, res) => {
+    const { role } = req.user;
+
+    if (role !== 'admin') {
+        return res.status(403).json({ message: 'Permission denied. Only admin can add products.' });
     }
-})
+
+    const newProduct = new ProductsData(req.body);
+
+    try {
+        const savedProduct = await newProduct.save();
+        res.status(200).json(savedProduct);
+    } catch (error) {
+        res.status(500).json(error);
+    }
+});
+
 
 // UPDATE POST
+router.put('/:id', authMiddleware, async (req, res) => {
+    const { role } = req.user;
 
-router.put('/:id', async(req, res) =>{
+    if (role !== 'admin') {
+        return res.status(403).json({ message: 'Permission denied. Only admin can update products.' });
+    }
+
     try {
         const product = await ProductsData.findById(req.params.id)
         if (product.username === req.body.username){
@@ -35,12 +50,18 @@ router.put('/:id', async(req, res) =>{
             res.status(401).json("You can only update your post")
         }
     } catch (err) {
-        res.status(500).json(err)
-        
+        res.status(500).json(err);
     }
-})
+});
+
 // DELETE POST
-router.delete('/:id', async(req, res) =>{
+router.delete('/:id', authMiddleware, async (req, res) => {
+    const { role } = req.user;
+
+    if (role !== 'admin') {
+        return res.status(403).json({ message: 'Permission denied. Only admin can delete products.' });
+    }
+
     try {
         const product = await ProductsData.findById(req.params.id)
         if (product.username === req.body.username){
@@ -54,10 +75,9 @@ router.delete('/:id', async(req, res) =>{
             res.status(401).json("You can delete only your post")
         }
     } catch (err) {
-        res.status(500).json(err)
-        
+        res.status(500).json(err);
     }
-})
+});
 
 // GET POST
 router.get('/:id', async(req, res) =>{

@@ -5,11 +5,7 @@ const CartSchema = new mongoose.Schema(
         username:{
         type: String,
         require: true
-        },
-        items :{
-            type: Array,
-            require: true
-        },
+        }
        
     },
     {timestamps: true}
