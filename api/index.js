@@ -1,6 +1,8 @@
 const express = require("express")
 const app = express();
 
+const  authRouter = express.Router();
+
 const authRoute = require('./routes/auth')
 const adminAuthRoutes = require('./routes/adminAuth')
 const userRoute = require('./routes/users')
@@ -8,8 +10,10 @@ const productDataRoute = require('./routes/productsData')
 const categoryRoute = require('./routes/categories')
 const commentsRoute = require('./routes/comments')
 const cartRoute = require('./routes/cart')
-// const addOnsRoute = require('./routes/addons')
 const multer = require('multer')
+const path = require('path')
+
+
 
 app.use(express.json())
 const dotenv= require("dotenv")
@@ -18,7 +22,12 @@ dotenv.config()
 const mongoose= require("mongoose")
 
 
- 
+
+
+app.use(express.json())
+app.use('/images', express.static(path.join(__dirname,"/images")))
+
+
 
 mongoose.connect(process.env.MONGO_URL
 )
@@ -52,10 +61,9 @@ app.use('/api/data',productDataRoute)
 app.use('/api/categories',categoryRoute)
 app.use('/api/comment',commentsRoute)
 app.use('/api/cart',cartRoute)
-// app.use('/api/addons',addOnsRoute)
 
 
-dotenv.config()
+
 app.listen("5000",()=>{
     console.log("backing end is aa running");
 })

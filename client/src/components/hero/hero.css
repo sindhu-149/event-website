@@ -1,0 +1,17 @@
+.mhero{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.upperNav{
+    background-color: antiquewhite;
+}
+
+.lowerNav{
+    background-color: aquamarine;
+}

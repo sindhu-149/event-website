@@ -1,29 +1,33 @@
 const mongoose = require('mongoose')
 
 const ProductsDataSchema = new mongoose.Schema(
-    {
-               title :{
+    {   
+        username:{
             type: String,
-            require: true,
+            required: true,
+        },
+            title :{
+            type: String,
+            required: true,
             unique: true
         },
         photo:{
             type: String,
-            require: true,
+            required: true,
             default:" "
         },
         price:{
             type: Number,
-            require: true,
+            required: true,
         },
         rating:{
             type: Number,
-            require: true,
+            required: true,
             default:" "
         },
         category:{
             type: String,
-            require: true,
+            required: true,
         },
         comments:{
             type: Array,

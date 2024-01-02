@@ -11,15 +11,12 @@ import { Link } from 'react-router-dom';
 
 
 
-const SingleProduct = () => {
+
+const SingleProduct = ({productsData}) => {
 
     const { category } = useParams();
     const similar = info.filter(c => c.category === category)
     console.log(category, similar);
-
-
-
-    
 
   return (
     <div className='bindhu'>
@@ -30,10 +27,10 @@ const SingleProduct = () => {
 
                 <div className='categoryItembox'>
                 <div className='category-box'>
-                {info
+                {productsData
                 .filter((p) => p.category === category)
                 .map((p) => (
-                    <Link to={`/single-product/${p.id}/${p.category}`} className='navStyle'>
+                    <Link to={`/single-product/${p._id}`} className='navStyle'>
                 <div key={p.id} className='product'>
                     <img className='product-img' src={p.image} alt={p.title} />
                     <p className='product-name'>{p.title}</p>

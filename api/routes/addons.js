@@ -16,7 +16,7 @@ router.post('/add-addons/:productId', authMiddleware, async (req, res) => {
 
     // Fetch the user
     const userId = req.user._id;
-    console.log('userId:', userId);
+    // console.log('userId:', userId);
 
     const user = await User.findById(userId);
 

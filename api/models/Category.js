@@ -4,15 +4,15 @@ const CategorySchema = new mongoose.Schema(
     {
         name :{
             type: String,
-            require: true
+            required: true
         },
         photo:{
             type: String,
-            require: true,
+            required: true,
         },
         addons:{
             type:Array,
-            require:false
+            required:false
         }
     },
     {timestamps: true}
